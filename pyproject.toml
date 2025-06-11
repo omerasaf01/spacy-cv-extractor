@@ -1,0 +1,14 @@
+[project]
+name = "spacy-cv-extractor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]>=0.115.12",
+    "pydantic>=2.11.5",
+    "pypdf>=5.6.0",
+    "spacy>=3.8.7",
+    "uv>=0.7.12",
+    "uvicorn>=0.34.3",
+]
