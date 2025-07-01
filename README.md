@@ -2,7 +2,7 @@
 
 An AI-powered resume analysis tool that automatically extracts and organizes information from PDF resumes.
 
-![CV Extractor Banner](https://via.placeholder.com/800x200?text=CV+Extractor)
+![CV Extractor Banner](/assets/screen.png)
 
 ## Project Overview
 
