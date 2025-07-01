@@ -1,10 +1,20 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import JSONResponse
-from src.services.ai_services import AIServices
+from src.services.ai_services import process_document
 import os
 import random
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # İzin verilen kaynaklar
+    allow_credentials=True, # Kimlik bilgilerini gönderme izni
+    allow_methods=["*"],    # İzin verilen HTTP metotları
+    allow_headers=["*"],    # İzin verilen HTTP başlıkları
+)
 
 @app.post("/uploads/cv")
 async def upload_cv(file: UploadFile = File(...)):
@@ -32,4 +42,4 @@ async def upload_cv(file: UploadFile = File(...)):
     with open(file_path, "wb") as f:
         f.write(content)
 
-    return AIServices(pdf_file = file_path).extract_cv()
+    return process_document(pdf_path = file_path)
