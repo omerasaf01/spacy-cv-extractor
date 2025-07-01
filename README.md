@@ -53,9 +53,9 @@ CV Extractor is a comprehensive solution for parsing and analyzing resumes/CVs i
 
 1. Open Directory
 
-```bash
-$ cd nlp_model
-```
+   ```bash
+   $ cd nlp_model
+   ```
 
 2. Install dependencies:
 
