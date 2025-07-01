@@ -128,26 +128,8 @@ POST /uploads/cv
 {
   "personalInfo": {
     "name": "John Doe",
-    "email": "john.doe@example.com",
-    "phone": "+1 234-567-8901",
-    "address": "New York, NY"
+    "email": "john.doe@example.com"
   },
-  "summary": "Experienced software engineer with 5+ years...",
-  "experience": [
-    {
-      "title": "Senior Software Engineer",
-      "company": "Tech Corp",
-      "duration": "2020-Present",
-      "description": "Led development of..."
-    }
-  ],
-  "education": [
-    {
-      "degree": "Bachelor of Science in Computer Science",
-      "school": "University of Technology",
-      "year": "2018"
-    }
-  ],
   "skills": ["JavaScript", "Python", "React", "Node.js"]
 }
 ```
